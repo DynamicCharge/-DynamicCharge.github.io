@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Главная</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript">
+    </script>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrapper">
+ 
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <a href="" class="logo"><img src="assets/img/logo..png" alt=""></a>
+                        <span class="header__text">Архитектура и проектирование домов премиум-класса</span>
+                        <div class="header__controlls">
+                            <a href="tel:+74992907617" class="header__phone">+7 (499) 290-76-17</a>
+                            <div class="header__socials">
+                                <a href="#" class="header__social-item"><img src="assets/img/wa..png" alt=""></a>
+                                <a href="#" class="header__social-item"><img src="assets/img/tg..png" alt=""></a>
+                            </div>
+                            <a href="#" class="header__btn page-btn">Заказать звонок</a>
+                            <a href="#" class="header__auth">
+                                <svg><use xlink:href="assets/img/sprite..svg#auth"></use></svg>
+                                <span>Войти</span>
+                            </a>
+                            <div class="burger__wrapper">
+                                <div class="burger" data-burger>
+                                    <div class="burger__item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <nav class="header__nav">
+                            <ul class="header__list" data-hover-dd>
+                                <li class="header__item">
+                                    <svg><use xlink:href="assets/img/sprite..svg#home"></use></svg>
+                                    <a href="#" class="--dropdown-arrow">Проекты</a>
+                                </li>
+                                <li class="header__item">
+                                    <svg><use xlink:href="assets/img/sprite..svg#goods"></use></svg>
+                                    <a href="#" class="--dropdown-arrow">Услуги</a>
+                                </li>
+                                <li class="header__item">
+                                    <svg><use xlink:href="assets/img/sprite..svg#gallery"></use></svg>
+                                    <a href="#" class="--dropdown-arrow">Галерея</a>
+                                </li>
+                                <li class="header__item">
+                                    <svg><use xlink:href="assets/img/sprite..svg#company"></use></svg>
+                                    <a href="#" class="--dropdown-arrow">Компания</a>
+                                </li>
+                                <li class="header__item">
+                                    <svg><use xlink:href="assets/img/sprite..svg#contacts"></use></svg>
+                                    <a href="#" class="--dropdown-arrow">Контакты</a>
+                                </li>
+
+                                <div class="header__dropdown" style="">
+                                    <div class="header__dropdown-wrapper">
+                                        <ul class="header__dropdown-list">
+                                            <span class="header__dropdown-header">Материал</span>
+                                            <li class="header__dropdown-item"><a href="#">Каменные дома</a></li>
+                                            <li class="header__dropdown-item"><a href="#">Деревянные дома</a></li>
+                                            <li class="header__dropdown-item"><a href="#">Комбинированные дома</a></li>
+                                        </ul>
+                                        <ul class="header__dropdown-list">
+                                            <span class="header__dropdown-header">Гараж</span>
+                                            <li class="header__dropdown-item"><a href="#">С гаражом</a></li>
+                                            <li class="header__dropdown-item"><a href="#">Без гаража</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <ul class="header__dropdown-list">
+                                        <span class="header__dropdown-header">Этажность</span>
+                                        <li class="header__dropdown-item"><a href="#">Одноэтажные</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Двухэтажные</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Трехэтажные</a></li>
+                                        <li class="header__dropdown-item"><a href="#">С мансардой</a></li>
+                                        <li class="header__dropdown-item"><a href="#">С цокольным этажом</a></li>
+                                    </ul>
+                                    <ul class="header__dropdown-list">
+                                        <span class="header__dropdown-header">Стиль</span>
+                                        <li class="header__dropdown-item"><a href="#">Английский</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Современный</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Шале</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Классический</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Райт</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Хай Тек</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Барнхаус</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Скандинавский</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Ар-деко</a></li>
+                                    </ul>
+                                    <ul class="header__dropdown-list">
+                                        <span class="header__dropdown-header">Архитектурные решения</span>
+                                        <li class="header__dropdown-item"><a href="#">Балкон</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Терраса</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Камин</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Эксплуатируемая кровля</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Второй свет</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Панорамное остекление</a></li>
+                                    </ul>
+                                    <ul class="header__dropdown-list">
+                                        <span class="header__dropdown-header">Доп. помещения </span>
+                                        <li class="header__dropdown-item"><a href="#">Зона барбекю</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Сауна/баня/хаммам</a></li>
+                                        <li class="header__dropdown-item"><a href="#">Мансарда</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                            <div class="header__search-wrap">
+                                <a href="#" class="header__search" data-search>
+                                    <svg><use xlink:href="assets/img/sprite..svg#search"></use></svg>
+                                </a>
+                                <div class="header__search-wrapper" data-search-form>
+                                    <form action="" class="header__search-form">
+                                        <svg><use xlink:href="assets/img/sprite..svg#search"></use></svg>
+                                        <input type="text" class="header__search-input" placeholder="Поиск...">
+                                        <a href="#" class="header__search-close"></a>
+                                    </form>
+                                    <!-- <ul class="header__search__list">
+                                        <li class="header__search__list-item">Каменные дома</li>
+                                        <li class="header__search__list-item">Деревянные дома</li>
+                                        <li class="header__search__list-item">Комбинированные дома</li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </nav>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile" data-list-mobile>
+                <div class="header__mobile-wrapper">
+                    <a href="" class="header__mobile__close" data-mobile-close></a>
+                    <div class="header__mobile__section">
+                        <a href="" class="header__mobile__lk">
+                            <svg><use xlink:href="assets/img/sprite..svg#auth"></use></svg>
+                            Личный кабинет
+                        </a>
+                        <form action="" class="header__mobile__search">
+                            <input type="text" class="header__search-input" placeholder="Поиск...">
+                            <button><svg><use xlink:href="assets/img/sprite..svg#search"></use></svg></button>
+                        </form>
+                    </div>
+                    <div class="header__mobile__section">
+                        <ul class="header__mobile__list">
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><svg><use xlink:href="assets/img/sprite..svg#home"></use></svg><span>Проекты</span></span>
+                                <ul class="header__mobile__item__sublist" data-acc-list>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Материал</span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Каменные дома</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Деревянные дома</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Комбинированные дома</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Гараж</span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>С гаражом</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Без гаража</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Этажность</span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Одноэтажные</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Двухэтажные</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Трехэтажные</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>С мансардой</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>С цокольным этажом</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Стиль</span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Английский</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Современный</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Шале</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Классический</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Райт</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Хай Тек</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Барнхаус</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Скандинавский</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Ар-деко</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Архитектурные решения</span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Балкон</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Терраса</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Камин</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Эксплуатируемая кровля</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Второй свет</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Панорамное остекление</span></a>
+                                            </li>                                                                                                                                    
+                                        </ul>
+                                    </li>
+                                    <li class="header__mobile__item__subitem" data-acc-parent>
+                                        <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger><span>Доп. помещения </span></span>
+                                        <ul class="header__mobile__item__sublist" data-acc-list>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Зона барбекю</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Сауна/баня/хаммам</span></a>
+                                            </li>
+                                            <li class="header__mobile__item__subitem">
+                                                <a href="#" class="header__mobile__item__text"><span>Мансарда</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>                                                                         
+                                </ul>
+                            </li>
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger>
+                                    <svg><use xlink:href="assets/img/sprite..svg#goods"></use></svg>
+                                    <span>Услуги</span>
+                                </span>
+                            </li>
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger>
+                                    <svg><use xlink:href="assets/img/sprite..svg#gallery"></use></svg>
+                                    <span>Галерея</span>
+                                </span>
+                            </li>
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger>
+                                    <svg><use xlink:href="assets/img/sprite..svg#company"></use></svg>
+                                    <span>Услуги</span>
+                                </span>
+                            </li>
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger>
+                                    <svg><use xlink:href="assets/img/sprite..svg#goods"></use></svg>
+                                    <span>Компания</span>
+                                </span>
+                            </li>
+                            <li class="header__mobile__item" data-acc-parent>
+                                <span class="header__mobile__item__text --dropdown-arrow" data-acc-trigger>
+                                    <svg><use xlink:href="assets/img/sprite..svg#contacts"></use></svg>
+                                    <span>Контакты</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__mobile__section">
+                        <a href="" class="header__phone">+7 (499) 290-76-17</a>
+                        <a href="" class="header__btn page-btn">Заказать звонок</a>
+                        <div class="header__socials">
+                            <a href="#" class="header__social-item"><img src="assets/img/wa..png" alt=""></a>
+                            <a href="#" class="header__social-item"><img src="assets/img/tg..png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main index-page">
+            <section class="index-title">
+                <div class="index-title__slider-wrapper">
+                    <div class="index-title__slider">
+                        <div class="index-title__slide">
+                            <img src="assets/img/title-bg1..jpg" alt="" class="index-title__bg">
+                            <div class="container">
+                                <div class="index-title__text">
+                                    <h2 class="index-title__header">Строительство домов под ключ</h2>
+                                    <p class="index-title__desc">
+                                        Строим надежные и комфортабельные дома любой степени сложности. Успешное применение современных технологий и многоступенчатый контроль качества гарантируют создание долговечного коттеджа, который на протяжении десятилетий будет радовать всех членов вашей семьи.
+                                    </p>
+                                    <div class="index-title__btns">
+                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-title__slide">
+                            <img src="assets/img/title-bg2..jpg" alt="" class="index-title__bg">
+                            <div class="container">
+                                <div class="index-title__text">
+                                    <h2 class="index-title__header">Индивидуальное проектирование</h2>
+                                    <p class="index-title__desc">
+                                        Штат опытных архитекторов, проектировщиков и конструкторов позволяет создать проект дома любой сложности, где каждый миллиметр пространства идеально подходит для вас.
+                                    </p>
+                                    <div class="index-title__btns">
+                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-title__slide">
+                            <img src="assets/img/title-bg3..jpg" alt="" class="index-title__bg">
+                            <div class="container">
+                                <div class="index-title__text">
+                                    <h2 class="index-title__header">Дизайн интерьера</h2>
+                                    <p class="index-title__desc">
+                                        Предлагаем комплексную разработку и воплощение в жизнь качественного, красивого и функционального дизайна интерьера частного дома. Мы готовы к любым вашим пожеланиям. Создаем не просто дизайн, а неповторимую атмосферу и комфорт жилья, прорабатывая все, вплоть до мелочей!
+                                    </p>
+                                    <div class="index-title__btns">
+                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-title__slide">
+                            <img src="assets/img/title-bg4..jpg" alt="" class="index-title__bg">
+                            <div class="container">
+                                <div class="index-title__text">
+                                    <h2 class="index-title__header">Ландшафтный дизайн участка</h2>
+                                    <p class="index-title__desc">
+                                        Создаем комфортное и гармоничное пространство жизни, где участок, экстерьер и интерьер дома являются единым целым. При разработке концепции ландшафтного дизайна мы опираемся на архитектурный стиль дома и учитываем идеи дизайнера интерьеров.
+                                    </p>
+                                    <div class="index-title__btns">
+                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-title__slide">
+                            <img src="assets/img/title-bg5..jpg" alt="" class="index-title__bg">
+                            <div class="container">
+                                <div class="index-title__text">
+                                    <h2 class="index-title__header">Инженерные коммуникации</h2>
+                                    <p class="index-title__desc">
+                                        Предлагаем полный комплекс услуг, связанных с ремонтом обустройством частного дома. Мы располагаем собственным проектным бюро, штатом сертифицированных инженерно-технических работников и бригадами опытных рабочих различных специальностей с соответствующими формами допуска.
+                                    </p>
+                                    <div class="index-title__btns">
+                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="index-title__slider__dots-wrapper"></div>
+                </div>
+            </section>
+            <section class="index-about">
+                <div class="container">
+                    <div class="index-about__wrapper">
+                        <div class="index-about__info">
+                            <h1 class="index-about__header page-header">
+                                <span class="--main-color">Rotenstein</span> <span class="_hide-mob">—</span> проектирование и строительство частных домов
+                            </h1>
+                            <ul class="index-about__list">
+                                <li class="index-about__item">
+                                    <span class="index-about__num">442</span>
+                                    <span class="index-about__desc page-text">
+                                        дома уже радуют наших клиентов
+                                    </span>
+                                </li>
+                                <li class="index-about__item">
+                                    <span class="index-about__num">286</span>
+                                    <span class="index-about__desc page-text">
+                                        проектов 
+                                        разработано с нуля
+                                    </span>
+                                </li>
+                                <li class="index-about__item">
+                                    <span class="index-about__num">98</span>
+                                    <span class="index-about__desc page-text">
+                                        процентов клиентов приходят к нам по рекомендации
+                                    </span>
+                                </li>
+                                <li class="index-about__item">
+                                    <img src="assets/img/about-item-img..jpg" alt="" class="index-about__img">
+                                    <img src="assets/img/house-svg..svg" alt="" class="index-about__bg">
+                                    <span class="index-about__num">50</span>
+                                    <span class="index-about__desc page-text">
+                                        лет гарантия на построенные дома
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="index-about__bottom">
+                            <div class="index-about__video">
+                                <img src="assets/img/about-vid-preview..jpg" alt="">
+                            </div>
+                            <div class="index-about__text">
+                                <h3 class="index-about__subhead page-header">О компании</h3>
+                                <p>
+                                    Наша команда понимает, как важны для вас время и качество. Полностью разделяя эти ценности, мы сотрудничаем с проверенными партнёрами и тщательно прорабатываем каждую деталь. Это позволяет нам избежать неточностей при создании проекта и предлагать вам рациональные решения при строительстве дома вашей мечты.
+                                </p>
+                                <a href="#" class="index-about__btn page-btn page-text">Подробнее о компании</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-projects">
+                <div class="container">
+                    <div class="main-projects__wrapper">
+                        <div class="main-projects__headline">
+                            <h3 class="main-projects__header page-header">Проекты домов</h3>
+                            <a href="#" class="main-projects__btn page-btn-transparent">Смотреть весь каталог</a>
+                        </div>
+                        <div class="main-projects__lists">
+                            <ul class="main-projects__list">
+                                <li class="main-projects__item"><a href="">Одноэтажные дома</a></li>
+                                <li class="main-projects__item"><a href="">Двухэтажные дома</a></li>
+                                <li class="main-projects__item"><a href="">Каменные дома</a></li>
+                                <li class="main-projects__item"><a href="">Деревянные дома</a></li>
+
+                                <img src="assets/img/project1..png" alt="">
+                            </ul>
+                            <ul class="main-projects__list">
+                                <li class="main-projects__item"><a href="">Классические дома</a></li>
+                                <li class="main-projects__item"><a href="">Современные дома</a></li>
+                                <li class="main-projects__item"><a href="">Дома в стиле хай-тек</a></li>
+                                <li class="main-projects__item"><a href="">Дома в стиле райта</a></li>
+
+                                <img src="assets/img/project2..png" alt="">
+                            </ul>
+                            <ul class="main-projects__list">
+                                <li class="main-projects__item"><a href="">Дома с плоской кровлей</a></li>
+                                <li class="main-projects__item"><a href="">Дома с панорамными окнами</a></li>
+                                <li class="main-projects__item"><a href="">Дома с мансардой</a></li>
+                                <li class="main-projects__item"><a href="">Дома с гаражом</a></li>
+
+                                <img src="assets/img/project3..png" alt="">
+                            </ul>
+                        </div>
+                        <div class="same__slider-wrap">
+                            <div class="site-select__slider-wrap__controlls">
+                                <button class="transparent-slider-btn same__slider-prev"><img src="assets/img/slider-arrow..svg" alt=""></button>
+                                <button class="transparent-slider-btn same__slider-next"><img src="assets/img/slider-arrow..svg" alt=""></button>
+                            </div>
+                           <div class="same__slider">
+                               <div class="same-slider__item">
+                                   <a href="" class="same-slider__item__img-box">
+                                       <img src="assets/img/same1..jpg" alt="">
+                                   </a>
+                                   <div class="same-slider__item__desc">
+                                       <div class="same-slider__item__headline">
+                                           <span class="same-slider__item__heading">Дом в Ренессанс Парке</span>
+                                           <span class="same-slider__item__square">280 м2</span>
+                                        </div>
+                                        <ul class="same-slider__item__list">
+                                            <li class="same-slider__item__list__item">
+                                                <img src="assets/img/same-info1..svg" alt="">
+                                                <span>2 этажа</span>
+                                            </li>
+                                            <li class="same-slider__item__list__item">
+                                                <img src="assets/img/same-info2..svg" alt="">
+                                                <span>4 спальни</span>
+                                            </li>
+                                            <li class="same-slider__item__list__item">
+                                                <img src="assets/img/same-info3..svg" alt="">
+                                                <span>4 санузла</span>
+                                            </li>
+                                            <li class="same-slider__item__list__item">
+                                                <img src="assets/img/same-info4..svg" alt="">
+                                                <span>без гаража</span>
+                                            </li>
+                                        </ul>
+                                   </div>
+                               </div>
+                               <div class="same-slider__item">
+                                <a href="" class="same-slider__item__img-box">
+                                    <img src="assets/img/same2..jpg" alt="">
+                                </a>
+                                <div class="same-slider__item__desc">
+                                    <div class="same-slider__item__headline">
+                                        <span class="same-slider__item__heading">Проект</span>
+                                        <span class="same-slider__item__square">280 м2</span>
+                                     </div>
+                                     <ul class="same-slider__item__list">
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info1..svg" alt="">
+                                            <span>2 этажа</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info2..svg" alt="">
+                                            <span>4 спальни</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info3..svg" alt="">
+                                            <span>4 санузла</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info4..svg" alt="">
+                                            <span>без гаража</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="same-slider__item">
+                                <a href="" class="same-slider__item__img-box">
+                                    <img src="assets/img/same3..jpg" alt="">
+                                </a>
+                                <div class="same-slider__item__desc">
+                                    <div class="same-slider__item__headline">
+                                        <span class="same-slider__item__heading">Проект</span>
+                                        <span class="same-slider__item__square">280 м2</span>
+                                     </div>
+                                     <ul class="same-slider__item__list">
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info1..svg" alt="">
+                                            <span>2 этажа</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info2..svg" alt="">
+                                            <span>4 спальни</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info3..svg" alt="">
+                                            <span>4 санузла</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info4..svg" alt="">
+                                            <span>без гаража</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="same-slider__item">
+                                <a href="" class="same-slider__item__img-box">
+                                    <img src="assets/img/same4..jpg" alt="">
+                                </a>
+                                <div class="same-slider__item__desc">
+                                    <div class="same-slider__item__headline">
+                                        <span class="same-slider__item__heading">Проект</span>
+                                        <span class="same-slider__item__square">280 м2</span>
+                                     </div>
+                                     <ul class="same-slider__item__list">
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info1..svg" alt="">
+                                            <span>2 этажа</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info2..svg" alt="">
+                                            <span>4 спальни</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info3..svg" alt="">
+                                            <span>4 санузла</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info4..svg" alt="">
+                                            <span>без гаража</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="same-slider__item">
+                                <a href="" class="same-slider__item__img-box">
+                                    <img src="assets/img/same1..jpg" alt="">
+                                </a>
+                                <div class="same-slider__item__desc">
+                                    <div class="same-slider__item__headline">
+                                        <span class="same-slider__item__heading">Проект</span>
+                                        <span class="same-slider__item__square">280 м2</span>
+                                     </div>
+                                     <ul class="same-slider__item__list">
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info1..svg" alt="">
+                                            <span>2 этажа</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info2..svg" alt="">
+                                            <span>4 спальни</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info3..svg" alt="">
+                                            <span>4 санузла</span>
+                                        </li>
+                                        <li class="same-slider__item__list__item">
+                                            <img src="assets/img/same-info4..svg" alt="">
+                                            <span>без гаража</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-calculate">
+                <div class="container">
+                    <div class="main-calculate__wrapper">
+                        <img src="assets/img/calculate-wtf..jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="main-services">
+                <div class="container">
+                    <div class="main-services__wrapper">
+                        <h3 class="main-services__header page-header">Предоставляем услуги</h3>
+                        <div class="main-services__tabs-wrapper" data-tab-wrapper>
+                            <ul class="main-services-list">
+                                <li class="main-services__item _active" data-tab="Проектирование">
+                                    <span class="wrap">
+                                        <span class="num">1</span>
+                                        Проектирование
+                                    </span>  
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                                <li class="main-services__item" data-tab="Строительство">
+                                    <span class="wrap">
+                                        <span class="num">2</span>
+                                        Строительство
+                                    </span>
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                                <li class="main-services__item" data-tab="Дизайн интерьеров">
+                                    <span class="wrap">
+                                        <span class="num">3</span>
+                                        Дизайн интерьеров
+                                    </span>
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                                <li class="main-services__item" data-tab="Инженерные коммуникации">
+                                    <span class="wrap">
+                                        <span class="num">4</span>
+                                        Инженерные коммуникации
+                                    </span>
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                                <li class="main-services__item" data-tab="Ландшафтный дизайн">
+                                    <span class="wrap">
+                                        <span class="num">5</span>
+                                        Ландшафтный дизайн
+                                    </span>
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                                <li class="main-services__item" data-tab="Внутренняя отделка">
+                                    <span class="wrap">
+                                        <span class="num">6</span>
+                                        Внутренняя отделка
+                                    </span>
+                                    <div class="main-services__item__sublist"></div>                                  
+                                </li>
+                            </ul>
+                            <div class="main-services__tabs__container">
+                                <div class="main-services__tabs__content _active" data-content="Проектирование">
+                                    <span class="main-services__tabs__header">Проектирование</span>
+                                    <p>
+                                        От элитных резиденций до небольших загородных домов, от минимализма до роскоши: при создании проекта будущего дома важно учитывать многие критерии. Жилье должно соответствовать личным вкусам и потребностям домочадцев, отражать их характер и воплощать мечты.
+                                        <br><br>   
+                                        Проектирование дома в Rotenstein отличается высочайшей глубиной проработки каждой детали и системным подходом в организации строительного процесса. Для каждого проекта создается детальный ППР (план производства работ), в котором наглядно отражены все этапы, последовательность работ и сроки.                                        
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                                <div class="main-services__tabs__content" data-content="Строительство">
+                                    <span class="main-services__tabs__header">Строительство</span>
+                                    <p>
+                                        Строим надежные и комфортабельные дома любой степени сложности. Успешное применение современных технологий и многоступенчатый контроль качества гарантируют создание долговечного коттеджа, который на протяжении десятилетий будет радовать всех членов вашей семьи.
+                                        <br><br>
+                                        Rotenstein отличается от других компаний гибким графиком платежей. Еще на стадии проектирования дома мы выбираем комфортный для заказчика формат финансирования и придерживаемся его в дальнейшем.                                        
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                                <div class="main-services__tabs__content" data-content="Дизайн интерьеров">
+                                    <span class="main-services__tabs__header">Дизайн интерьеров</span>
+                                    <p>
+                                        Предлагаем комплексную разработку и воплощение в жизнь качественного, красивого и функционального дизайна интерьера частного дома. Мы готовы к любым вашим пожеланиям. Создаем не просто дизайн, а неповторимую атмосферу и комфорт жилья, прорабатывая все, вплоть до мелочей!
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                                <div class="main-services__tabs__content" data-content="Инженерные коммуникации">
+                                    <span class="main-services__tabs__header">Инженерные коммуникации</span>
+                                    <p>
+                                        Предлагаем полный комплекс услуг, связанных с ремонтом обустройством частного дома. Мы располагаем собственным проектным бюро, штатом сертифицированных инженерно-технических работников и бригадами опытных рабочих различных специальностей с соответствующими формами допуска.
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                                <div class="main-services__tabs__content" data-content="Ландшафтный дизайн">
+                                    <span class="main-services__tabs__header">Ландшафтный дизайн</span>
+                                    <p>
+                                        Создаем комфортное и гармоничное пространство жизни, где участок, экстерьер и интерьер дома являются единым целым. При разработке концепции ландшафтного дизайна мы опираемся на архитектурный стиль дома и учитываем идеи дизайнера интерьеров
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                                <div class="main-services__tabs__content" data-content="Внутренняя отделка">
+                                    <span class="main-services__tabs__header">Внутренняя отделка</span>
+                                    <p>
+                                        Внутренняя отделка — это финальная стадия строительства дома под ключ. Ее качество определяет, как долго интерьер сохранит свой первозданный вид.
+                                        <br><br>
+                                        Все этапы выполняются высококвалифицированными мастерами нашей компании с большим опытом и проверенными субподрядчиками. Отделка загородных домов проводится под контролем главного инженера, руководителя проекта (который координирует всех специалистов), инженера технического надзора и производителя работ.                                        
+                                    </p>
+                                    <div class="main-services__tabs__wrapper">
+                                        <a href="#" class="main-services__tabs__btn page-btn">Заказать</a>
+                                        <a href="#" class="main-services__tabs__link">Перейти на страницу →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-services__categories">
+                            <div href="#" class="main-services__categories__link" data-acc-parent>
+                                <span data-acc-trigger>
+                                    Внешняя отделка
+                                </span>
+                                <div class="main-services__categories-content" data-acc-list>
+                                    <p>
+                                        Долговечность дома зависит не только от качественных материалов и мастерства строителей. Детальные исследования грунта конкретного участка — типа почвы, залегания грунтовых вод, рельефа местности — позволят подобрать подходящий тип фундамента и составить план подключения коммуникаций.
+                                    </p>
+                                    <a href="">Подробнее</a>
+                                </div>
+                                <img src="assets/img/svg-arrow..svg" alt="">
+                            </div>
+                            <div href="#" class="main-services__categories__link" data-acc-parent>
+                                <span data-acc-trigger>
+                                    Геология и геодезия 
+                                </span>
+                                <div class="main-services__categories-content" data-acc-list>
+                                    <p>
+                                        Выполняем все виды фасадных работ. Бригада профессиональных альпинистов качественно и в кратчайшие сроки произведет ремонт или монтаж на любом объекте. Каждому клиенту мы гарантируем высокое качество услуг, индивидуальный подход и конкурентоспособные расценки. Мы используем только качественные материалы от проверенных производителей.
+                                    </p>
+                                    <a href="">Подробнее</a>
+                                </div>
+                                <img src="assets/img/svg-arrow..svg" alt="">
+                            </div>
+                            <div href="#" class="main-services__categories__link" data-acc-parent>
+                                <span data-acc-trigger>
+                                    Подбор земельного участка
+                                </span>
+                                <div class="main-services__categories-content" data-acc-list>
+                                    <p>
+                                        Помощь в подборе земельного участка по пожеланиям клиентов.                                    
+                                    </p>
+                                    <a href="">Подробнее</a>
+                                </div>
+                                <img src="assets/img/svg-arrow..svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-advantages">
+                <div class="container">
+                    <div class="main-advantages__wrapper">
+                        <h4 class="main-advantages__header page-header">Создать дом мечты для качественно новой жизни становится реальным с Rotenstein</h4>
+                        <ul class="main-advantages__list">
+                            <li class="main-advantages__item">
+                                <img src="assets/img/ddv-bg1..jpg" alt="" class="main-advantages__item__img">
+                                <img src="assets/img/ddv1..png" alt="" class="main-advantages__item__icon">
+                                <span class="main-advantages__item__header page-subheader">Эксклюзивная компетентность</span>
+                                <p class="main-advantages__item__text">Мы строим дома в коттеджных поселках премиум-класса, знаем особенности их внутренней экосистемы, поэтому в проекте учитываем и ваше будущее взаимодействие с инфраструктурой элитного поселка</p>
+                            </li>
+                            <li class="main-advantages__item">
+                                <img src="assets/img/ddv-bg2..jpg" alt="" class="main-advantages__item__img">
+                                <img src="assets/img/ddv2..png" alt="" class="main-advantages__item__icon">
+                                <span class="main-advantages__item__header page-subheader">Глубина планирования</span>
+                                <p class="main-advantages__item__text">Погружаемся в ваш образ жизни, чтобы продумать и реализовать проект в мельчайших деталях</p>
+                            </li>
+                            <li class="main-advantages__item">
+                                <img src="assets/img/ddv-bg3..jpg" alt="" class="main-advantages__item__img">
+                                <img src="assets/img/ddv3..png" alt="" class="main-advantages__item__icon">
+                                <span class="main-advantages__item__header page-subheader">Надежность</span>
+                                <p class="main-advantages__item__text">Сотрудничаем только с сертифицированными производителями, обучаем персонал в Европе, работаем с передовыми программами для проектирования, расчетов и интеллектуального планирования этапов проекта</p>
+                            </li>
+                            <li class="main-advantages__item">
+                                <img src="assets/img/ddv-bg4..jpg" alt="" class="main-advantages__item__img">
+                                <img src="assets/img/ddv4..png" alt="" class="main-advantages__item__icon">
+                                <span class="main-advantages__item__header page-subheader">Преимущество в деталях</span>
+                                <p class="main-advantages__item__text">Мы построили уникальную экосистему бизнес-процессов и компетенций. Качественное отличие подхода Rotenstein позволит вам быть спокойными за ход строительства, сроки и качество работ</p>
+                            </li>
+                            <li class="main-advantages__item">
+                                <img src="assets/img/ddv-bg5..jpg" alt="" class="main-advantages__item__img">
+                                <img src="assets/img/ddv5..png" alt="" class="main-advantages__item__icon">
+                                <span class="main-advantages__item__header page-subheader">Гибкость</span>
+                                <p class="main-advantages__item__text">Всегда можем скорректировать проект или ход работ в случае, если у вас кардинально изменятся предпочтения экономия времени. мы выполняем под ключ все работы по строительству дома, освобождая вас от необходимости непрерывного контроля и решения рутинных задач</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main-news">
+                <div class="container">
+                    <div class="main-news__wrapper">
+                        <h4 class="main-news__header page-header">Новости со стройки</h4>
+                        <div class="main-news__slider-wrapper">
+                            <div class="main-news__slider">
+                                <div class="main-news__slide">
+                                    <img src="assets/img/news__bg1..jpg" alt="" class="main-news__slide__bg">
+                                    <div class="main-news__slide__wrap">
+                                        <span class="main-news__slide__header page-subheader">Заголовок</span>
+                                        <p class="main-news__slide__text page-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                                            
+                                        </p>
+                                        <div class="main-news__slide__bottom">
+                                            <span class="main-news__slide__date">20.01.2022</span>
+                                            <a href="" class="main-news__slide__link page-btn">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-news__slide">
+                                    <img src="assets/img/news__bg1..jpg" alt="" class="main-news__slide__bg">
+                                    <div class="main-news__slide__wrap">
+                                        <span class="main-news__slide__header page-subheader">Заголовок</span>
+                                        <p class="main-news__slide__text page-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                                            
+                                        </p>
+                                        <div class="main-news__slide__bottom">
+                                            <span class="main-news__slide__date">20.01.2022</span>
+                                            <a href="" class="main-news__slide__link page-btn">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-news__slide">
+                                    <img src="assets/img/news__bg1..jpg" alt="" class="main-news__slide__bg">
+                                    <div class="main-news__slide__wrap">
+                                        <span class="main-news__slide__header page-subheader">Заголовок</span>
+                                        <p class="main-news__slide__text page-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                                            
+                                        </p>
+                                        <div class="main-news__slide__bottom">
+                                            <span class="main-news__slide__date">20.01.2022</span>
+                                            <a href="" class="main-news__slide__link page-btn">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="main-news__slide">
+                                    <img src="assets/img/news__bg1..jpg" alt="" class="main-news__slide__bg">
+                                    <div class="main-news__slide__wrap">
+                                        <span class="main-news__slide__header page-subheader">Заголовок</span>
+                                        <p class="main-news__slide__text page-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                                            
+                                        </p>
+                                        <div class="main-news__slide__bottom">
+                                            <span class="main-news__slide__date">20.01.2022</span>
+                                            <a href="" class="main-news__slide__link page-btn">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>                                                                                             
+                            </div>
+                            <div class="main-news__controlls">
+                                <buttom class="main-news__arrow main-news__prev"><img src="assets/img/round-arrow..svg" alt=""></buttom>
+                                <buttom class="main-news__arrow main-news__next"><img src="assets/img/round-arrow..svg" alt=""></buttom>
+                            </div>
+                            <div class="main-news__dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-map">
+                <div class="container">
+                    <div class="main-map__wrapper">
+                        <h4 class="main-map__header page-header">Построили более 400 частных домов по всей России</h4>
+                        <div class="main-map__top">
+                            <p class="main-map__text page-subheader">
+                                Компания ROTENSTEIN занимается строительством надежных и комфортабельных домов на всей территории России. Мы выполняем заказы любого уровня сложности, а наши реализованные проекты часто можно увидеть в элитных коттеджных поселках.                                 
+                            </p>
+                            <div class="main-map__invite">
+                                <span>Приглашаем на экскурсию</span>
+                                <a href="#" class="main-map__invite-btn page-btn">Подробнее</a>
+                            </div>
+                        </div>                      
+                    </div>                      
+                </div>
+                <div class="main-map__container">
+                    <div class="main-map__map" id="map"></div>
+                </div>                
+            </section>
+
+            <section class="main-news-block">
+                <div class="container">
+                    <div class="main-news__wrapper">
+                        <div class="main-news__headline">
+                            <h4 class="main-news__header page-header">Новости и полезные статьи</h4>
+                            <a href="" class="main-news__btn page-btn-transparent">Все статьи</a>
+                        </div>
+                        <ul class="main-news__list">
+                            <li class="main-news__item">
+                                <img src="assets/img/news-1..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Пожалуйста предоставьте картинки без белых полей :(
+                                        <br>
+                                        Что нужно знать о строительстве загородного дома в стиле Хай Тек
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-2..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Дом в стиле барнхаус: идеи для смелых и креативных
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-3..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Загородный дом с плоской крышей: особенности строительства..
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-4..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Плюсы и минусы строительства из керамических блоков
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-5..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Что нужно знать о строительстве загородного дома в стиле Хай Тек
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-6..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Дом в стиле барнхаус: идеи для смелых и креативных
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-7..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Загородный дом с плоской крышей: особенности строительства..
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="main-news__item">
+                                <img src="assets/img/news-8..jpg" alt="" class="main-news__img">
+                                <div class="main-news__desc">
+                                    <span class="main-news__date">17.05.2022</span>
+                                    <p class="main-news__text">
+                                        Плюсы и минусы строительства из керамических блоков
+                                    </p>
+                                    <a href="" class="main-news__link">Подробнее</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>        
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="footer__top__left">
+                            <a href="" class="footer__logo"><img src="assets/img/footer-logo..svg" alt=""></a>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link">
+                                    <img src="assets/img/footer-wa..png" alt="">
+                                    <img class="_hover" src="assets/img/footer-wa-hover..png" alt="">
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <img src="assets/img/footer-tg..png" alt="">
+                                    <img class="_hover" src="assets/img/footer-tg-hover..png" alt="">
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <img src="assets/img/footer-vk..png" alt="">
+                                    <img class="_hover" src="assets/img/footer-vk-hover..png" alt="">
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <img src="assets/img/footer-yt..png" alt="">
+                                    <img class="_hover" src="assets/img/footer-yt-hover..png" alt="">
+                                </a>                                                                                                
+                            </div>
+                        </div>
+                        <div class="footer__top__right">
+                            <div class="footer__top__right__wrap">
+                                <ul class="footer__list">
+                                    <a href="#" class="footer__header page-subheader">Проекты домов</a>
+                                </ul>
+                                <ul class="footer__list">
+                                    <span class="footer__header page-subheader">Услуги</span>
+                                    <li class="footer__list__item">
+                                        <a href="#">Проектирование</a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#">Строительство</a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#">Инженерные коммуникации</a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#">Ландшафтный дизайн</a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#">Дизайн интерьеров</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__list">
+                                    <a href="" class="footer__header page-subheader">О компании</a>
+                                    <a href="" class="footer__header page-subheader">Сотрудничество</a>
+                                    <a href="" class="footer__header page-subheader">Контакты</a>
+                                </ul>
+                            </div>
+                            <div class="footer__controlls">
+                                <a href="" class="footer__btn page-btn-transparent">Заказать звонок</a>
+                                <a href="" class="footer__phone">+7 (499) 290-76-17</a>
+                                <span class="footer__desc">Москва, Нижний Сусальный пер., 5с19, офис 305</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="container">
+                    <span class="footer__copy page-text">
+                        2011 - 2022 © ROTENSTEIN — проектирование и строительство домов премиум-класса. Все права защищены.                        
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
