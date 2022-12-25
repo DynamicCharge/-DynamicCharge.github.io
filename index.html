@@ -544,7 +544,7 @@
                                         Строим надежные и комфортабельные дома любой степени сложности. Успешное применение современных технологий и многоступенчатый контроль качества гарантируют создание долговечного коттеджа, который на протяжении десятилетий будет радовать всех членов вашей семьи.
                                     </p>
                                     <div class="index-title__btns">
-                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#modal-call" data-fancybox class="index-title__btn page-btn">Консультация</a>
                                         <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
                                     </div>
                                 </div>
@@ -560,7 +560,7 @@
                                         Штат опытных архитекторов, проектировщиков и конструкторов позволяет создать проект дома любой сложности, где каждый миллиметр пространства идеально подходит для вас.
                                     </p>
                                     <div class="index-title__btns">
-                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#modal-call" data-fancybox class="index-title__btn page-btn">Консультация</a>
                                         <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
                                     </div>
                                 </div>
@@ -576,7 +576,7 @@
                                         Предлагаем комплексную разработку и воплощение в жизнь качественного, красивого и функционального дизайна интерьера частного дома. Мы готовы к любым вашим пожеланиям. Создаем не просто дизайн, а неповторимую атмосферу и комфорт жилья, прорабатывая все, вплоть до мелочей!
                                     </p>
                                     <div class="index-title__btns">
-                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#modal-call" data-fancybox class="index-title__btn page-btn">Консультация</a>
                                         <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
                                     </div>
                                 </div>
@@ -592,7 +592,7 @@
                                         Создаем комфортное и гармоничное пространство жизни, где участок, экстерьер и интерьер дома являются единым целым. При разработке концепции ландшафтного дизайна мы опираемся на архитектурный стиль дома и учитываем идеи дизайнера интерьеров.
                                     </p>
                                     <div class="index-title__btns">
-                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#modal-call" data-fancybox class="index-title__btn page-btn">Консультация</a>
                                         <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
                                     </div>
                                 </div>
@@ -608,7 +608,7 @@
                                         Предлагаем полный комплекс услуг, связанных с ремонтом обустройством частного дома. Мы располагаем собственным проектным бюро, штатом сертифицированных инженерно-технических работников и бригадами опытных рабочих различных специальностей с соответствующими формами допуска.
                                     </p>
                                     <div class="index-title__btns">
-                                        <a href="#" class="index-title__btn page-btn">Консультация</a>
+                                        <a href="#modal-call" data-fancybox class="index-title__btn page-btn">Консультация</a>
                                         <a href="#" class="index-title__btn page-btn-transparent">Подробнее</a>
                                     </div>
                                 </div>
@@ -1140,9 +1140,23 @@
                             <p class="main-map__text page-subheader">
                                 Компания ROTENSTEIN занимается строительством надежных и комфортабельных домов на всей территории России. Мы выполняем заказы любого уровня сложности, а наши реализованные проекты часто можно увидеть в элитных коттеджных поселках.                                 
                             </p>
-                            <div class="main-map__invite">
+                            <div class="main-map__invite" data-acc-parent>
                                 <span>Приглашаем на экскурсию</span>
-                                <a href="#" class="main-map__invite-btn page-btn">Подробнее</a>
+                                <form class="main-map__form" data-acc-list="">
+                                    <p class="main-map__form-text page-subheader">
+                                        Мы не скрываем объекты и всегда готовы продемонстрировать качество выполняемых нами работ. Вы сможете понаблюдать за процессом строительства коттеджа, увидеть культуру нашего строительства и задать все интересующие вопросы. 
+                                        Мы уверены, что Вы останетесь довольны.
+                                    </p>
+                                    <div class="main-map__form-wrap">
+                                        <input type="text" placeholder="Как к Вам обращаться" class="page-field main-map__form-field">
+                                        <input type="phone" placeholder="Ваш номер телефона*" class="page-field main-map__form-field">
+                                    </div>
+                                    <button class="main-map__form-button page-btn">ЗАКАЗАТЬ ЭКСКУРСИЮ</button>
+                                    <div class="main-map__form-ep">
+                                        Нажимая на кнопку, вы соглашаетесь с <a href="#">Политикой обработки персональных данных</a>
+                                    </div>
+                                </form>
+                                <a href="javascript:void(0);" class="main-map__invite-btn page-btn" data-acc-trigger>Подробнее</a>
                             </div>
                         </div>                      
                     </div>                      
@@ -1320,6 +1334,30 @@
             </div>
         </footer>
 
+        <div class="modal" id="modal-call">
+            <div class="modal-wrapper">
+                <form action="" class="modal-form">
+                    <span class="modal__header">Заказать звонок</span>
+                    <span class="modal-form__text">Перезвоним Вам в течение пары минут</span>
+                    <input type="text" placeholder="Как к Вам обращаться" class="page-field modal-form__field">
+                    <input type="phone" placeholder="Ваш номер телефона" class="page-field modal-form__field">
+                    <button class="modal-form__submit page-btn">Получить консультацию</button>
+                    <span class="modal-form__ep">Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой обработки персональных данных</a></span>
+                </form>
+            </div>
+        </div>
+        <div class="modal" id="modal-spec">
+            <div class="modal-wrapper">
+                <form action="" class="modal-form">
+                    <span class="modal__header">Консультация специалиста</span>
+                    <span class="modal-form__text">Перезвоним Вам в течение нескольких минут</span>
+                    <input type="text" placeholder="Как к Вам обращаться" class="page-field modal-form__field">
+                    <input type="phone" placeholder="Ваш номер телефона" class="page-field modal-form__field">
+                    <button class="modal-form__submit page-btn">Получить консультацию</button>
+                    <span class="modal-form__ep">Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой обработки персональных данных</a></span>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 

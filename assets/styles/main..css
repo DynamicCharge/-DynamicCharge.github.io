@@ -773,6 +773,15 @@ table {
   font-size: 15px;
   line-height: 140%; }
 
+.page-field {
+  padding: 10px 10px 9px;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 140%;
+  border: 1px solid #F1F1F1;
+  outline: none; }
+
 .page-btn {
   display: inline-block;
   text-align: center;
@@ -1712,6 +1721,8 @@ table {
     .index-page .main-news .main-news__slide.slick-current.slick-active.slick-center {
       transform: none;
       opacity: 1; }
+    .index-page .main-news .main-news__slide:hover li.slick-active::before {
+      animation-play-state: paused !important; }
   .index-page .main-news .main-news__slide__bg {
     position: absolute;
     top: 0;
@@ -1775,11 +1786,26 @@ table {
       margin: 0;
       height: 3px;
       background: rgba(150, 150, 150, 0.15);
-      transition: .3s; }
-      .index-page .main-news .main-news__dots .slick-dots li.slick-active {
-        background: #B34215; }
+      transition: .3s;
+      position: relative;
+      overflow: hidden; }
+      .index-page .main-news .main-news__dots .slick-dots li.slick-active::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #B34215;
+        width: 100%;
+        height: 100%;
+        animation: stories 5s linear; }
     .index-page .main-news .main-news__dots .slick-dots li button {
       display: none; }
+
+@keyframes stories {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
 
 .index-page .main-map {
   background: #333434;
@@ -1818,10 +1844,41 @@ table {
       text-align: center;
       color: #FFFFFF;
       margin-bottom: 14px; }
+  .index-page .main-map .main-map__form {
+    display: none; }
+  .index-page .main-map .main-map__form-text {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 34px; }
+  .index-page .main-map .main-map__form-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px; }
+  .index-page .main-map .main-map__form-button {
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 9px; }
+  .index-page .main-map .main-map__form-ep {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px; }
+    .index-page .main-map .main-map__form-ep a {
+      color: #FFFFFF;
+      text-decoration: underline; }
   .index-page .main-map .main-map__invite-btn {
     background-image: url(../../assets/img/placemark..png);
     background-image: url(../../assets/img/map-img1..jpg);
     background-image: none; }
+    .index-page .main-map .main-map__invite-btn._active {
+      display: none; }
   .index-page .main-map .main-map__container {
     margin-top: 60px; }
   .index-page .main-map .main-map__map {
@@ -2030,6 +2087,62 @@ table {
   display: block;
   text-align: center;
   color: #61666A; }
+
+.modal {
+  max-width: 335px;
+  width: 100%;
+  display: none;
+  padding: 0; }
+
+.modal-wrapper {
+  padding: 30px 33px 26px;
+  box-sizing: border-box; }
+
+.modal__header {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #14162F;
+  margin-bottom: 10px; }
+
+.modal-form__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: #14162F;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center; }
+
+.modal-form__field {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px; }
+
+.modal-form__submit {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  max-width: 100%;
+  width: 100%;
+  text-transform: none; }
+
+.modal-form__ep {
+  margin-top: 10px;
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 140%;
+  /* or 14px */
+  text-align: center;
+  color: #37383D; }
+  .modal-form__ep a {
+    color: #37383D;
+    text-decoration: underline; }
 
 @media screen and (max-width: 1139px) {
   .footer .footer__wrapper {
@@ -2326,8 +2439,19 @@ table {
     line-height: 160%;
     /* or 27px */
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
-  .main-news__controlls {
-    display: none; }
+  .index-page .main-news .main-news__arrow {
+    left: 0;
+    height: 70%;
+    width: 25%;
+    z-index: 1; }
+    .index-page .main-news .main-news__arrow img {
+      display: none; }
+  .index-page .main-news .main-news__slide__link {
+    position: relative;
+    z-index: 10; }
+  .index-page .main-news .main-news__arrow.main-news__next {
+    right: 0;
+    left: unset; }
   .index-page .main-news .main-news__slide {
     max-width: unset;
     margin: 0;
