@@ -1886,6 +1886,7 @@ table {
     margin-top: 60px;
     position: relative; }
   .index-page .main-map .main-map__overlay {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -1893,7 +1894,6 @@ table {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 10;
-    display: flex;
     justify-content: center;
     align-items: center; }
   .index-page .main-map .main-map__map {
@@ -2459,6 +2459,8 @@ table {
     align-items: center; } }
 
 @media screen and (max-width: 540px) {
+  .index-page .main-map .main-map__overlay {
+    display: flex; }
   .index-page .main-map .main-map__map {
     height: 514px; }
   .index-page .main-news .main-news__slide__date {
