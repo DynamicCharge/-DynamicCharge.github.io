@@ -2264,9 +2264,12 @@ table {
     font-size: 17px;
     line-height: 20px; }
   .index-page .main-services .main-services__item .wrap {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background: #F8F8F8; }
   .index-page .main-services .main-services__tabs-wrapper {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    filter: none; }
   .index-page .main-services .main-services__tabs__container {
     display: none; }
   .index-page .main-services .main-services__header {
@@ -2462,7 +2465,7 @@ table {
   .index-page .main-map .main-map__overlay {
     display: flex; }
   .index-page .main-map .main-map__map {
-    height: 514px; }
+    height: 414px; }
   .index-page .main-news .main-news__slide__date {
     font-weight: 400;
     font-size: 17px;
