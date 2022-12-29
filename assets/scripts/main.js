@@ -12095,6 +12095,8 @@ $(document).ready(function () {
         dots: true,
         variableWidth: true,
         centerMode: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
         appendDots: $('.main-news__dots'),
 
         prevArrow: $('.main-news__prev'),
