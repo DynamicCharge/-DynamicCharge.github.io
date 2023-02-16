@@ -763,7 +763,7 @@ table {
 
 .page-subheader {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 140%;
   /* identical to box height, or 28px */
   color: #FFFFFF; }
@@ -914,12 +914,12 @@ table {
     transition: color .3s;
     display: flex;
     justify-content: center;
-    gap: 7px;
     text-decoration: none;
     color: #FFFFFF; }
     .header .header__auth svg {
       width: 19px;
-      height: 19px; }
+      height: 19px;
+      margin-right: 7px; }
     .header .header__auth span {
       font-weight: 400;
       font-size: 15px;
@@ -1522,7 +1522,7 @@ table {
   .index-page .same-slider__item__list__item span {
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 140%;
     /* identical to box height, or 14px */
     text-align: center;
@@ -1586,10 +1586,10 @@ table {
         top: 0;
         left: 0; }
   .index-page .main-services .main-services__tabs__container {
-    background: #fff; }
+    background: #fff;
+    min-height: 485px; }
   .index-page .main-services .main-services__tabs__content {
     height: 100%;
-    min-height: 485px;
     display: none;
     padding: 30px;
     box-sizing: border-box;
@@ -1598,7 +1598,7 @@ table {
       display: flex; }
     .index-page .main-services .main-services__tabs__content p {
       font-weight: 600;
-      font-size: 20px;
+      font-size: 22px;
       line-height: 140%;
       /* identical to box height, or 28px */
       color: #FFFFFF;
@@ -1621,7 +1621,7 @@ table {
     grid-template-columns: auto auto; }
   .index-page .main-services .main-services__tabs__link {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 140%;
     /* identical to box height, or 28px */
     color: #FFFFFF;
@@ -1739,7 +1739,7 @@ table {
     position: relative;
     z-index: 1;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 140%;
     color: #fff; }
 
@@ -1909,7 +1909,16 @@ table {
       color: #FFFFFF;
       margin-bottom: 14px; }
   .index-page .main-map .main-map__form {
-    display: none; }
+    display: none;
+    opacity: 0; }
+    .index-page .main-map .main-map__form._active {
+      animation: fadeIn .3s linear .2s forwards; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   .index-page .main-map .main-map__form-text {
     font-weight: 300;
     text-align: center;
@@ -1970,10 +1979,11 @@ table {
   .index-page .main-map .balloon {
     max-width: 380px;
     display: grid;
-    grid-template-columns: 145px auto; }
+    grid-template-columns: 160px auto;
+    align-items: start; }
   .index-page .main-map .balloon__img {
     background-size: cover;
-    height: 101%; }
+    height: 151px; }
   .index-page .main-map .balloon__info {
     padding: 14px 0 14px 10px; }
   .index-page .main-map .balloon__header {
