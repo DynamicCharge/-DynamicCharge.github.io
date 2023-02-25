@@ -1595,7 +1595,8 @@ table {
     box-sizing: border-box;
     flex-direction: column; }
     .index-page .main-services .main-services__tabs__content._active {
-      display: flex; }
+      display: flex;
+      animation: fadeIn .9s linear forwards; }
     .index-page .main-services .main-services__tabs__content p {
       font-weight: 600;
       font-size: 22px;
@@ -1605,6 +1606,12 @@ table {
       color: #343B40;
       font-weight: 300;
       margin-bottom: 30px; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   .index-page .main-services .main-services__tabs__header {
     font-weight: 700;
     font-size: 32px;
@@ -1748,18 +1755,19 @@ table {
   box-sizing: border-box; }
   .index-page .main-news .main-news__header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     text-transform: uppercase; }
   .index-page .main-news .main-news__slider-wrapper {
     position: relative; }
   .index-page .main-news .main-news__slider {
-    margin-bottom: 52px; }
+    margin-bottom: 46px; }
   .index-page .main-news .main-news__slide {
     max-width: 335px;
     position: relative;
     max-width: 335px;
     width: 100%;
     min-height: 594px;
+    height: 300px;
     display: flex;
     justify-content: start;
     align-items: flex-end;
@@ -1897,7 +1905,8 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    transition: .3s; }
     .index-page .main-map .main-map__invite span {
       display: block;
       font-style: normal;
@@ -1949,9 +1958,20 @@ table {
   .index-page .main-map .main-map__invite-btn {
     background-image: url(../../assets/img/placemark..png);
     background-image: url(../../assets/img/map-img1..jpg);
-    background-image: none; }
+    background-image: none;
+    transition: .3s;
+    box-sizing: border-box; }
     .index-page .main-map .main-map__invite-btn._active {
-      display: none; }
+      animation: fadeOut .2s forwards; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    max-height: max-content; }
+  100% {
+    opacity: 0;
+    max-height: 1px;
+    padding: 0; } }
   .index-page .main-map .main-map__container {
     margin-top: 42px;
     position: relative; }
@@ -1976,16 +1996,28 @@ table {
     height: max-content; }
   .index-page .main-map .ymaps-2-1-79-balloon__tail {
     display: none; }
+  .index-page .main-map .ymaps-2-1-79-balloon__content > ymaps {
+    width: max-content !important;
+    height: max-content !important; }
   .index-page .main-map .balloon {
-    max-width: 380px;
+    width: 461px;
+    min-height: 170px;
     display: grid;
-    grid-template-columns: 160px auto;
+    grid-template-columns: 200px auto;
     align-items: start; }
   .index-page .main-map .balloon__img {
     background-size: cover;
-    height: 151px; }
+    height: 101%; }
   .index-page .main-map .balloon__info {
-    padding: 14px 0 14px 10px; }
+    padding: 14px 0 14px 10px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column; }
+  .index-page .main-map .balloon__link {
+    margin-top: auto; }
   .index-page .main-map .balloon__header {
     font-weight: 700;
     font-size: 18px;
@@ -2493,6 +2525,8 @@ table {
     display: block; } }
 
 @media screen and (max-width: 756px) {
+  .index-page .main-map .balloon {
+    grid-template-columns: 170px auto; }
   .footer .footer__bot {
     padding: 20px; }
   .footer .footer__social {
