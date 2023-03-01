@@ -1763,16 +1763,15 @@ table {
   .index-page .main-news .main-news__slider {
     margin-bottom: 46px; }
   .index-page .main-news .main-news__slide {
-    max-width: 335px;
     position: relative;
-    max-width: 335px;
     width: 100%;
-    min-height: 594px;
+    min-height: 535px;
+    max-width: 300px;
     height: 300px;
     display: flex;
     justify-content: start;
     align-items: flex-end;
-    margin: 0 37px;
+    margin: 0 34px;
     opacity: .5;
     transform: scale(0.8);
     transition: .4s; }
@@ -1898,7 +1897,9 @@ table {
     padding-right: 88px;
     box-sizing: border-box; }
   .index-page .main-map .main-map__invite {
+    position: relative;
     padding: 19px 20px;
+    padding-top: 64px;
     box-sizing: border-box;
     background: #343B40;
     border: 1px solid #FFFFFF;
@@ -1909,6 +1910,8 @@ table {
     flex-direction: column;
     transition: .3s; }
     .index-page .main-map .main-map__invite span {
+      position: absolute;
+      top: 20px;
       display: block;
       font-style: normal;
       font-weight: 700;
