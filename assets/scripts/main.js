@@ -12191,7 +12191,7 @@ $(document).ready(function () {
     $(window).scroll(function() {
     var scrolled = $(window).scrollTop();
 
-    if ( scrolled > 100 && scrolled > scrollPrev ) {
+    if ( scrolled > 100 && scrolled + 1 > scrollPrev) {
         header.addClass('_hidden');
     } else {
         header.removeClass('_hidden');

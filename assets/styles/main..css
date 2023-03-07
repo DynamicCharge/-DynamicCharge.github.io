@@ -969,7 +969,9 @@ table {
       font-weight: 600;
       font-size: 15px;
       line-height: 140%;
-      margin-left: 10px; }
+      margin-left: 10px;
+      position: relative;
+      top: 3px; }
       .header .header__item .header__item-link::after {
         margin-left: 10px; }
     .header .header__item:hover {
@@ -1811,7 +1813,8 @@ table {
     color: #FFFFFF;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
   .index-page .main-news .main-news__slide__link {
-    padding: 10px 30px; }
+    padding: 10px 20px;
+    font-size: 15px; }
   .index-page .main-news .main-news__arrow {
     cursor: pointer;
     border: none;
