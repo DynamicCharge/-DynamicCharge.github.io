@@ -999,7 +999,7 @@ table {
     width: 20px;
     height: 20px; }
   .header .header__search-input {
-    padding: 8px 20px 8px 41px;
+    padding: 8px 30px 8px 41px;
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     outline: none;
@@ -2159,6 +2159,10 @@ table {
   flex-shrink: 0; }
 
 .footer .footer__header {
+  font-size: 20px;
+  line-height: 170%; }
+
+.footer .footer__header {
   text-decoration: none;
   display: block; }
   .footer .footer__header:not(:last-of-type) {
@@ -2277,7 +2281,8 @@ table {
   .footer .footer__wrapper {
     gap: 22px; }
   .footer .footer__top__right__wrap {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    margin-right: 30px; }
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -2532,6 +2537,8 @@ table {
     display: block; } }
 
 @media screen and (max-width: 756px) {
+  .footer .footer__top__right__wrap {
+    margin: 0; }
   .index-page .main-map .balloon {
     grid-template-columns: 170px auto; }
   .footer .footer__bot {
