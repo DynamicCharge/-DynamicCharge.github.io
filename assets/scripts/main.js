@@ -12023,7 +12023,13 @@ $(document).ready(function () {
     // $('[type="phone"]').mask('+7 (999) 999 99 99', {placeholder: ''});
 
     $('[type="phone"]').each(function(){
-        $(this).mask('+7 (999) 999 99 99', {placeholder: ''});
+        // $(this).mask('+7 (999)999-99-99', {placeholder: ''});
+
+        $(this).mask('+7 (999) 999 99 99').on('click', function () {
+            if ($(this).val() === '+7 (___) ___-__-__') {
+                $(this).get(0).setSelectionRange(0, 0);
+            }
+        });
     });
 
     if($(window).innerWidth() <= 820) {
